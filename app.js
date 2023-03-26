@@ -27,8 +27,8 @@ const Blog=mongoose.model("Blog",BlogSchema);
 
 
 
-app.listen(3500,function(){
-  console.log("server is running at port 3500");
+app.listen(3500||process.env.PORT,function(){
+  console.log("server has started successfully ");
 
 })
 
